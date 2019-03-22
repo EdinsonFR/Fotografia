@@ -30,7 +30,7 @@ body{
   list-style: none;
   display: flex;
 }
-li{
+.header ul li{
   margin-right: 50px;
   font-size: 28px;
   margin-top: 13px;
@@ -48,6 +48,35 @@ li{
   margin-left: 5%;
   padding-top: 2%;
   padding-bottom: 1.5%;
+}
+/*  movimiento de imagen  */
+.img2:hover{
+  border: 2px solid #82c3a6;
+  box-shadow: 5px 0 #82c3a6;
+  margin-top: 22px;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+.izquierda{
+  transition: all 2s;
+  -webkit-transition: all 0.5s;
+ -moz-transition: all 0.5s;
+ -ms-transition:all 0.5s;
+}
+.img3:hover{
+  border: 2px solid #82c3a6;
+  box-shadow: 5px 0 #82c3a6;
+  -webkit-transform:translate(20px, -5px);
+  -moz-transform: translate(20px, -5px);
+  transform: translate(20px, -5px);
+}
+.derecha{
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
 }
 /* imagen secundaria */
 .cont1{
@@ -68,15 +97,23 @@ li{
 }
 /* pie de pagina */
 .pie{
+  justify-content: space-between;
+  padding: 1%;
+  font-size: 25px;
   background:  #C6d5c5;
   display: flex;
-  justify-content: space-between;
 }
 .pie ul{
+  margin-left: 2%;
+  width: 350px;
   list-style: none;
-  border: 3px solid blue;
 }
-
+.pie ul li{
+  color: black;
+}
+.color{
+  color: black;
+}
 .i1, .i2, .i3{
-  width: 3%;
+  width: 9%;
 }
