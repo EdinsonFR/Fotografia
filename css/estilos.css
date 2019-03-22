@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'DancingScript';
+  src: url('DancingScript.otf');
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: DancingScript;
+  color: white;
+}
+body{
+  background: black;
+}
+/* cabecera */
+.header{
+  padding-top: 8px;
+  height: 70px;
+  background: #5b7989;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px 10px 0 0;
+}
+.header h1{
+  margin-left: 25px;
+  font-size: 40px;
+  text-shadow: 2px 2px #02010a;
+}
+.header ul{
+  margin-right: -25px;
+  list-style: none;
+  display: flex;
+}
+li{
+  margin-right: 50px;
+  font-size: 28px;
+  margin-top: 13px;
+}
+.Sin{
+  text-decoration: none;
+}
+/* imagen cnetral */
+.cont{
+  width: 100%;
+  background: #82c3a6;
+}
+.img1{
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 1.5%;
+}
+/* imagen secundaria */
+.cont1{
+  width: 100%;
+  background: #d5c75f;
+  border: 1px solid black;
+  display: flex;
+}
+.izquierda, .derecha{
+  margin: 2%;
+  padding: 0;
+  font-size: 30px;
+  text-align: center;
+  width: 46%;
+}
+.izquierda img, .derecha img{
+  width: 100%;
+}
+/* pie de pagina */
+.pie{
+  background:  #C6d5c5;
+  display: flex;
+  justify-content: space-between;
+}
+.pie ul{
+  list-style: none;
+  border: 3px solid blue;
+}
+
+.i1, .i2, .i3{
+  width: 3%;
+}

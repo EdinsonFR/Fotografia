@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'DancingScript';
+  src: url('DancingScript.otf');
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: DancingScript;
+  color: white;
+}
+body{
+  background: black;
+}
+/* cabecera */
+.header{
+  background: #5b7989;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+ul{
+  display: flex;
+  list-style: none;
+}
+li{
+  text-decoration: underline;
+  font-size: 25px;
+  margin: 25px;
+}
+h1{
+  font-size: 40px;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+.sin{
+  text-decoration: none;
+}
