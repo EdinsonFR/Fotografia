@@ -9,7 +9,7 @@
   color: white;
 }
 body{
-  background: black;
+  background:  #02010a;
 }
 /* cabecera */
 .header{
@@ -97,6 +97,7 @@ body{
 }
 /* pie de pagina */
 .pie{
+  border-radius: 0 0 10px 10px;
   justify-content: space-between;
   padding: 1%;
   font-size: 25px;
@@ -116,4 +117,8 @@ body{
 }
 .i1, .i2, .i3{
   width: 9%;
+}
+/*   diseño adaptativo*/
+@media screen and (max-width: 900px){
+
 }

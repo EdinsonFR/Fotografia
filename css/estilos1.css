@@ -9,7 +9,7 @@
   color: white;
 }
 body{
-  background: black;
+  background:  #02010a;
 }
 /* cabecera */
 .header{
@@ -68,6 +68,7 @@ body{
 }
 /*pie de pagina*/
 .pie{
+  border-radius: 0 0 10px 10px;
   justify-content: space-between;
   padding: 1%;
   font-size: 25px;
