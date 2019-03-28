@@ -9,31 +9,36 @@
   color: white;
 }
 body{
+  width: 900px;
+  margin: 0 auto;
   background:  #02010a;
 }
 /* cabecera */
 .header{
-  padding-top: 8px;
-  height: 70px;
+  width: 100%;
+  height: 50px;
   background: #5b7989;
+  padding-top: 0.9%;
   display: flex;
   justify-content: space-between;
   border-radius: 10px 10px 0 0;
 }
 .header h1{
   margin-left: 25px;
-  font-size: 40px;
+  font-size: 32px;
   text-shadow: 2px 2px #02010a;
 }
-.header ul{
-  margin-right: -25px;
+.menu ul {
   list-style: none;
   display: flex;
+  justify-content: flex-end;
 }
-.header ul li{
-  margin-right: 50px;
-  font-size: 28px;
-  margin-top: 13px;
+.menu ul li{
+  margin-top: 3%;
+  margin-right: 16%;
+}
+.menu ul li{
+  font-size: 25px;
 }
 .Sin{
   text-decoration: none;
@@ -66,18 +71,22 @@ body{
   -ms-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-/*pie de pagina*/
+/* pie de pagina */
 .pie{
+  width: 100%;
   border-radius: 0 0 10px 10px;
-  justify-content: space-between;
-  padding: 1%;
-  font-size: 25px;
+  font-size: 20px;
   background:  #C6d5c5;
+}
+.contactos{
   display: flex;
+  justify-content: space-around;
+}
+.contactos ul li img{
+  width: 15%;
 }
 .pie ul{
-  margin-left: 2%;
-  width: 350px;
+  width: 180px;
   list-style: none;
 }
 .pie ul li{
@@ -89,3 +98,69 @@ body{
 .i1, .i2, .i3{
   width: 9%;
 }
+/*   diseño adaptativo*/
+@media screen and (max-width: 900px){
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  body{
+    width: 100%;
+  }
+  /*  cabecera */
+  .header h1{
+    margin-left: -20px;
+    padding-top: 5px;
+    text-align: center;
+  }
+  .header{
+    height: 110px;
+    display: block;
+  }
+  .menu ul{
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+  }
+  nav{
+    margin-left: -20px;
+  }
+  .menu ul li{
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    margin-top: 8px;
+  }
+  .menu h1{
+    font-size: 50px;
+  }
+/*  imagenes   */
+.cont{
+  width: 100%;
+  display: block;
+}
+.cont img{
+  width: 90%;
+  margin: 5%;
+}
+  /*  pie de pagina*/
+  .pie{
+    font-size: 20px;
+    text-align: left;
+  }
+  .pie ul li img{
+    width: 6%;
+  }
+  .pie ul{
+    width: 100%;
+  }
+  .contactos{
+    display: block;
+    padding-left: 8%;
+  }
+  .contactos ul{
+    padding-top: 5%;
+  }
+  .contactos ul li img{
+    width: 4%;
+  }
