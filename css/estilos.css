@@ -24,7 +24,7 @@ body{
   border-radius: 10px 10px 0 0;
 }
 .header h1{
-  margin-left: 25px;
+  margin-left: 20px;
   font-size: 32px;
   text-shadow: 2px 2px #02010a;
 }
@@ -34,11 +34,9 @@ body{
   justify-content: flex-end;
 }
 .menu ul li{
-  margin-top: 3%;
-  margin-right: 16%;
-}
-.menu ul li{
-  font-size: 25px;
+  margin-top: 5%;
+  margin-right: 22%;
+  font-size: 20px;
 }
 .Sin{
   text-decoration: none;
@@ -53,11 +51,15 @@ body{
 }
 .img1{
   width: 90%;
+  box-shadow: 2px 2px #02010a;
 }
 /*  movimiento de imagen  */
+.img2, .img3{
+  box-shadow: 2px 2px #02010a;
+}
 .img2:hover{
   border: 2px solid #82c3a6;
-  box-shadow: 5px 0 #82c3a6;
+  box-shadow: 2px 2px #82c3a6;
   margin-top: 22px;
   -webkit-transform: rotate(10deg);
   -moz-transform: rotate(10deg);
@@ -104,7 +106,7 @@ body{
 .pie{
   width: 100%;
   border-radius: 0 0 10px 10px;
-  font-size: 20px;
+  font-size: 18px;
   background:  #C6d5c5;
 }
 .contactos{
@@ -112,10 +114,10 @@ body{
   justify-content: space-around;
 }
 .contactos ul li img{
-  width: 15%;
+  width: 12%;
 }
 .pie ul{
-  padding-bottom: 2%;
+  padding-bottom: 3%;
   width: 180px;
   list-style: none;
 }
@@ -139,12 +141,12 @@ body{
   }
   /*  cabecera */
   .header h1{
-    margin-left: -20px;
+    margin-left: -5px;
     padding-top: 5px;
     text-align: center;
   }
   .header{
-    height: 110px;
+    height: 100px;
     display: block;
   }
   .menu ul{
@@ -190,8 +192,29 @@ body{
     padding-left: 8%;
   }
   .contactos ul{
-    padding-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
   }
   .contactos ul li img{
     width: 4%;
   }
+}
+/* Diseño de movimiento */
+.contenido{
+  animation-duration: 1.5s;
+  animation-name: slidein;
+  -webkit-slidein: all 1.5s;
+  -moz-slidein: all 1.5s;
+  -ms-slidein: all 1.5s;
+}
+@keyframes slidein {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0;
+  }
+}
